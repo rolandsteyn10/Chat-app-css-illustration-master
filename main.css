@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Rubik';
+}
+
+.webpage-container {
+  display: flex;
+}
+
+.left-container {
+  height: 100vh;
+  width: 50vw;
+}
+
+.background-shape {
+  background: linear-gradient(180deg, #e942ff 0%, #8838ff 80%, #8838ff 100%);
+  /* background-color: #8838ff;
+  background: linear-gradient(left to right #e942ff #8838ff); */
+  position: absolute;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  width: 30%;
+  height: 85%;
+}
+
+.phone-container {
+  background: #ffffff;
+  position: absolute;
+  left: 356px;
+  top: 100px;
+  width: 230px;
+  height: 431px;
+  border: #feffff solid 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 4px 4px 16px -1px #6b64648a;
+}
+
+.top-profile-shape {
+  width: 130px;
+  height: 27px;
+  background: #feffff;
+  border-radius: 10px;
+  position: relative;
+  bottom: 2%;
+  left: 20%;
+  z-index: 1;
+}
+
+.top-profile {
+  background: linear-gradient(90deg, #8838ff 0%, #8838ff 30%, #e942ff 100%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  column-gap: 10px;
+  height: 60px;
+  padding: 0 0 10px 5px;
+  position: relative;
+  bottom: 7%;
+}
+
+.fa-solid.fa-chevron-left {
+  color: #ffd2ff;
+}
+
+.avatar-image-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: #ffffff solid 1px;
+}
+
+.profile-container h4 {
+  color: #ffd2ff;
+  font-size: 10px;
+  font-weight: 100;
+  padding-bottom: 3px;
+}
+
+.profile-container p {
+  color: #ffd2ff;
+  font-size: 6px;
+  font-weight: 100;
+}
+
+.fa-solid.fa-ellipsis-vertical {
+  color: #ffd2ff;
+  position: relative;
+  left: 60px;
+}
+
+.messages-container {
+  background: #f5f3f8;
+  padding: 5px;
+  position: relative;
+  bottom: 7%;
+  height: 353px;
+}
+
+.messages-received-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message-received {
+  color: #9c7daf;
+  background: #ede5f4;
+  font-size: 8px;
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.message-received-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e942ff;
+  background: linear-gradient(90deg, #e942ff 0%, #e942ff 35%, #8838ff 100%);
+  color: #ffffff;
+  font-size: 10px;
+  width: 145px;
+  height: 30px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.message-received-duration {
+  font-size: 7px;
+}
+
+strong {
+  font-size: 14px;
+}
+
+.messages-sent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.message-sent {
+  color: #716e77;
+  background: #ede5f4;
+  font-size: 8px;
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.message-sent.short {
+  width: 75px;
+}
+
+.message-typing-container {
+  background: #feffff;
+  color: #cbcdcc;
+  font-size: 8px;
+  padding: 5px;
+  border-radius: 10px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-solid.fa-chevron-right {
+  color: #ffd2ff;
+  background: #402654;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.main-dog-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 5px;
+}
+
+.image-dog-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dog-image {
+  width: 100%;
+  height: 100%;
+}
+
+.right-container {
+  height: 100vh;
+  width: 50vw;
+}
+
+.main-info-container {
+  width: 475px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-info-heading {
+  color: #402654;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.main-info-paragraph {
+  color: #b2b1b3;
+  font-size: 16px;
+}
+
+/* Mobile */
+@media(max-width: 800px) {
+  .webpage-container {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .left-container {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .background-shape {
+    width: 50%;
+    bottom: 205px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .phone-container {
+    left: 65px;
+    top: 75px;
+  }
+
+  .right-container {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .main-info-container {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+}
